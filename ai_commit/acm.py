@@ -2,7 +2,7 @@ import subprocess
 
 from dotenv import load_dotenv
 
-from utils import get_diff, suggest_commit_message
+from common.utils import get_diff, suggest_commit_message
 
 load_dotenv()
 

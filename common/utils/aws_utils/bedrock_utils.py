@@ -3,8 +3,8 @@ import os
 
 import boto3
 
-from constants import AWSConstants
-from prompts import COMMIT_MESSAGE_PROMPT
+from common.constants import AWSConstants
+from common.prompts import COMMIT_MESSAGE_PROMPT
 
 
 def suggest_commit_message(diff_text):
