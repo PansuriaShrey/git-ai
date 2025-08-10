@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+        language_version: python3.11
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        language_version: python3.11
+  - repo: https://github.com/PyCQA/autoflake
+    rev: v2.3.1
+    hooks:
+      - id: autoflake
+        name: autoflake (remove unused imports)
+        entry: autoflake --in-place --remove-unused-variables --remove-all-unused-imports --expand-star-imports --ignore-init-module-imports
+        language: python
+        language_version: python3.11
+        types: [python]
